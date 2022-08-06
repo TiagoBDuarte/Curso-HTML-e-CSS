@@ -5,13 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grouping Tags</title>
+    <!--
+        Ordem de Grouping Tags
+        header
+         h1
+          nav
+           a
+
+        main
+         section
+        footer
+    -->
+    <style>
+        body{
+
+             font-family: 'Times New Roman', Times, sans-serif,auto;
+            
+        }
+        
+
+        
+        header{
+            background: lightgray;
+            height: 100px;
+            width: auto;
+            border: 10px solid blueviolet;
+            padding: 10px 10px 10px 10px;
+            margin: 10px 10px 10px 10px;
+                         
+            
+
+        }
+        h1{
+
+            background: #ffeb3b;
+            height: auto;
+            width: auto;
+            text-align: center;
+            border: 1px solid black;
+            padding: 5px 1px 1px 5px;
+            margin: 15px 1px 12px 1px;
+
+        }
+
+        nav{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 2px ;
+            padding: 1px 1px 1px 5px;
+            margin: 1px 1px 1px 110px;
+
+        }
+
+        a{
+            background-color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            text-align: center;         
+            padding: 5px 50px 5px 50px;
+            margin: 5px 120px 5px 5px;
+
+
+        }
+    </style>
+    
 </head>
 <body>
-    <header>
+    <header id="cabeçalho">
+        <h1>Meu site</h1>
+        <nav id="menus">
+            <a href="">Quem somos</a>
+            <a href="">Missão</a>
+            <a href="">Projetos</a>
+            <a href="">Contato</a>
+            <a href="">Fundadores</a>
+        </nav>
 
     </header>
 
     <main>
+        <section id="assuntos">
+
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Artigo sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae nemo magni, officia totam nulla impedit ullam ex exercitationem, repellat quia veritatis, ut quam. Explicabo, tempore natus? Necessitatibus repellendus unde officiis.</p>
+                <aside> Artigo escrito por João</aside>
+
+            </article>
+
+            <article>
+
+            </article>
+
+        </section>
 
     </main>
 
@@ -20,7 +108,7 @@
     </section>
 
     <footer>
-        
+
     </footer>
 
 
