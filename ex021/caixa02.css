@@ -5,35 +5,32 @@
             src: url(/ex021/fontes/Streetbomber.ttf);
             font-weight: normal;
         }
-        /*Esquema de cores para o site
-           #DD6827
-           #28DED7
-           #FF8847 
-        */
+        
 
         :root{
 
-          --co0:#DD6827;
-          --co1:#28DED7;
-          --co2:#FF8847;
-          --co2:#0D0D0D;
+          --co0:#DD6827;  /* */
+          --co1: #28DED7;  /* Header */
+          --co2: #FF8847;  /*  */
+          --co3: #0D0D0D;  /* Body */
+          --co4: #ffffff;  /* Fundo da Página Principal:,article,section, border */
 
         }
 
         body {             
              
+             background-color: var(--co3);
              font-family: 'Roboto', sans-serif;
              color: #0D0D0D;            
         }
                
         header {
-            background-color: #FFFFFF;
+            background-color: var(--co0);
             height: 200px;
             width: auto;
-            border: 2px solid #EBBC4E;  
+            border: 2px solid var(--co4);  
             padding: 10px 10px 10px 10px;
-            margin: 10px 10px 40px 10px;
-            box-shadow: 1px 10px 8px black;
+            margin: 10px 10px 40px 10px;            
             border-radius: 10px; 
             }
 
@@ -50,10 +47,9 @@
         .linkmenuheader{
             height: 59px;
             width: 27%;
-            border: 2px solid #25d122;
+            border: 2px solid var(--co4);
             padding: 1px 25px 0px 9px;
             margin: 16px 25px 30px 20px;
-            box-shadow: 3px 4px 0px black;
             border-radius: 6px;        
         }
 
@@ -73,10 +69,10 @@
          }
 
         main{
-            background-color:#FFFFFF;
+            background-color:var(--co3);
             height: 1000px;
             width: auto;
-            border: 2px solid #EBBC4E;            
+            border: 2px solid var(--co4);          
             padding: 10px 10px 10px 10px;
             margin: 10px 10px 10px 10px;
             border-radius: 10px; 
@@ -89,7 +85,7 @@
         }
 
         section#assuntos{
-            background-color:#BDBDBD;
+            background-color:var(--co2);
             height: 100px;
             width: auto;
             padding: 10px 10px 10px 10px;
@@ -97,7 +93,7 @@
         }       
 
         section#noticias{
-            background-color:#BDBDBD;
+            background-color: var(--co2);
             height: 400px;
             width: auto;                      
             padding: 10px 10px 10px 10px;
@@ -105,10 +101,11 @@
         } 
 
         article#artigoprincipal{
-            background-color:#FFFFFF;
+            background-color:var(--co4);
             height: 100px;
             width: auto;
-            border: 5px solid #EBBC4E; 
+            border: 5px solid var(--co0); 
+            box-shadow: 5px 6px 5px var(--co3);
             padding: 10px 10px 10px 10px;
             margin: 10px 10px 10px 10px;
         }
@@ -117,7 +114,8 @@
             background-color:#FFFFFF;
             height: 100px;
             width: auto;
-            border: 5px solid #EBBC4E; 
+            border: 5px solid var(--co0) ; 
+            box-shadow: 5px 6px 5px var(--co3);
             padding: 10px 10px 10px 10px;
             margin: 10px 10px 10px 10px;
         } 
