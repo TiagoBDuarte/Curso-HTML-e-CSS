@@ -1,5 +1,25 @@
+       /*   Fontes para os menus:
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Rubik Dirt', cursive;
 
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+            Fonte do h1 Principal:
+            font-family:'logo';
+            src: url(/ex021/fontes/PhillySans.otf);
+            font-weight: normal;
+
+
+             Font Reserva:
+            @font-face {
+            font-family:'basket';
+            src: url(/ex021/fontes/Streetbomber.ttf);
+            font-weight: normal;
+            }
+ 
+            
+         */
+       
+       
+       @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Rubik+Dirt&display=swap');
 
@@ -18,16 +38,11 @@
 
         :root{
 
-          --co0:#DD6827;  /* */
-          --co1: #28DED7;  /* Header */
-          --co2: #FF8847;  /*  */
-          --co3: #0D0D0D;  /* Body */
-          --co4: #ffffff;  /* Fundo da Página Principal:,article,section, border */
-
-                  
-
-
-
+          --co0: #DD6827;  
+          --co1: #28DED7;  
+          --co2: #FF8847; 
+          --co3: #0D0D0D;  
+          --co4: #ffffff;  
 
 
           --fontelogo: logo, Arial, sans-serif;
@@ -35,107 +50,21 @@
 
         }
 
-        body {             
-             
-             background-color: var(--co3);
-             font-family: 'Roboto', sans-serif;
-             color: #0D0D0D;            
-        }
-               
-        header {
-            background-color: var(--co0);
-            height: 200px;
-            width: auto;
-            border: 2px solid var(--co4);  
-            padding: 10px 10px 10px 10px;
-            margin: 10px 10px 40px 10px;            
-            
+        body{
+            background-color: #0D0D0D;
         }
 
-        img#logotipo{
-            height: 115px;
-            padding: 10px 10px 10px 10px        
-            }
-
-        nav{
-            height: 20px;
-            margin: 1px 2px -100px 300px;
-
+        header{
+            background-color: #DD6827;
         }
-        .linkmenuheader{
-                       
-            font-family: 'Roboto', sans-serif;
-            font-family: 'Rubik Dirt', cursive;
-            color: #0D0D0D;            
-            border: 1px solid var(--co2);
-            box-shadow: 1px 1px 1px #0D0D0D;
+
+        div#resph1{
            
-                 
-        }
-
-        h1{
-           font-family: var(--fontelogo);
-           font-size: 80px;
-           height: 1px;
-           text-align: center;
-           margin: 10px 10px 10px 10px;            
-        }
-        
-        .linkmenusection{
-            padding: 10px 10px 10px 10px;
-            margin: 10px 60px 10px 60px;
-         }
-
-        main{
-            background-color:var(--co3);
-            height: 1000px;
-            width: auto;
-            border: 2px solid var(--co4);          
-            padding: 10px 10px 10px 10px;
-            margin: 10px 10px 10px 10px;
-            border-radius: 10px; 
-        }
-
-        .linkmenusection {
             text-align: center;
-            padding: 10px 10px 10px 10px;
-            margin: 10px 60px 10px 60px;
+            margin: auto;
+
         }
 
-        section#assuntos{
-            background-color:var(--co2);
-            height: 100px;
-            width: auto;
-            padding: 10px 10px 10px 10px;
-            margin: 10px 10px 10px 10px; 
-        }       
-
-        section#noticias{
-            background-color: var(--co2);
-            height: 400px;
-            width: auto;                      
-            padding: 10px 10px 10px 10px;
-            margin: 10px 10px 10px 10px; 
-        } 
-
-        article#artigoprincipal{
-            background-color:var(--co4);
-            height: 100px;
-            width: auto;
-            border: 5px solid var(--co0); 
-            box-shadow: 5px 6px 5px var(--co3);
-            padding: 10px 10px 10px 10px;
-            margin: 10px 10px 10px 10px;
+        section{
+            background-color: #DD6827;
         }
-
-        article#artigosecundario{
-            background-color:#FFFFFF;
-            height: 100px;
-            width: auto;
-            border: 5px solid var(--co0) ; 
-            box-shadow: 5px 6px 5px var(--co3);
-            padding: 10px 10px 10px 10px;
-            margin: 10px 10px 10px 10px;
-        } 
-
- 
