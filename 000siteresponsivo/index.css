@@ -7,22 +7,32 @@ font-family: 'Yellowtail', cursive;
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Nunito:wght@300&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap');
 
 :root{
-    --cor0:#1c1c1c;
-    --cor1: #000000;
-    --cor2: #191970;
-    --cor3: #ffff;
+
+    --cor0: #1c1c7c ;
+    --cor1: #000000 ;
+    --cor2: #ffffff;
+    
 }
 
 body{
 
     font-family: 'Nunito', sans-serif;
-    color: var(--cor2);
+    color: #1c1c7c;
 }
 
 h1,h2,h3{
 
-    font-family: 'Nunito', sans-serif;
-    color: var(--cor3);
+    font-family: 'Asap', sans-serif;
+    color:#000000;
+}
+
+.botao{
+    color:#ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #191970;
+    font-size: .9em;
+    border-radius: 3px;
 }
 
 /*Navegação*/
@@ -31,40 +41,41 @@ nav{
     display: flex;
     flex-direction:column;
     align-items: center;
-    background-color: var(--cor2);
+    background-color: #191970;
 
 }
 
 
 nav > a {
     text-decoration:none;
-    color: var(--cor2);
+    color: #ffffff ;
     font-weight: 800;
     font-size: 32px;
     font-family: 'Yellowtail', cursive;
 }
 
-   ul {
+nav ul {
 
-    display: flex;
+    display: flex;   
     flex-direction:column;
     align-items: center;
-    list-style:center;
+    list-style:none;
     padding:0;
     width:100%;
 }
 
- li {
+ nav ul li {
     text-align:center;
     width:100%;
 }
 
- a {
+nav ul li a {
     display: inline-block;
+    text-align: center;
     padding: 10px 0;
     width: 100%;
     text-decoration: none;
-    color: var(--cor);
+    color: #ffffff;
 }
 
 /* Cabeçalho*/
@@ -76,9 +87,186 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #ffffff;
+    color:#ffffff;
     text-align: center;
     padding:20px ;
 
 }
 
+header h1{
+    color: #ffffff;
+}
+
+header p {
+   margin-bottom: 2em;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+    background-color:#191970;
+}
+
+ #sobre h2 {
+    color:#ffffff;
+}
+
+#sobre p {
+    color:#ffffff;
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+#sobre .botao{
+    background-color: #f1f1f1;
+    color: #1c1c7c;
+}
+
+#serviços{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:30px;
+
+
+}
+
+#serviços div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+
+}
+
+#fotos{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+
+#fotos h2 {
+
+    margin-bottom: 20px;
+}
+
+#fotos img {
+
+    margin-bottom: 100%;
+}
+
+
+#contato{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#contato h2{
+
+    color: #000000;
+}
+
+footer{
+
+    text-align:center;
+    padding:10px;
+    color: #ffffff;
+
+}
+
+footer a {
+
+    text-decoration: none;
+    color: #00FFFF;
+
+}
+
+@media screen and (min-width:768px){
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul{
+
+        flex-direction: row;
+        width:70%;
+
+
+    }
+    header{
+
+        height: 600px;
+        height:60vh;
+        justify-content: center;
+
+    }
+
+    #sobre{
+
+        height: 250px;
+        height: 250px;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    #serviços{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #serviços h2{
+        text-align: center;
+        width: 100%;
+    }
+
+    #serviços div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    #fotos{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+   #fotos h2{
+        width: 100%;
+        text-align: center;
+    }
+
+    #fotos img{
+        width: 33.333333%;
+        text-align: center;
+    }
+
+    #contato{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+
+    }
+
+    #contato h2, #contato p {
+
+        width: 100%;
+        }
+
+
+}
