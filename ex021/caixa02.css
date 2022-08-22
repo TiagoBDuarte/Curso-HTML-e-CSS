@@ -62,13 +62,17 @@
 
        }
 
-       header{
-        background-image: linear-gradient(to right, var(--co3), var(--co2) );       
-        color:var(--co4);
-
-       }
+       header {
+        background-image: linear-gradient(to right, var(--co3), var(--co2) );
+        color: var(--co4);
+        margin: 1px 1px 25px 1px;
+        padding: 0;
+        width: 100%;
+    }
 
        h1{
+        font-family:'logo';
+        color:var(--co1);
         text-align: center;
         font-weight: 800;
         font-size: 32px;
@@ -83,11 +87,28 @@
         padding:0;
         width:100%;
 
-       }      
+       } 
+
+       div{
+        background-image: linear-gradient(to right, var(--co3), var(--co2) );   
+        margin: auto;
+        padding: 0;
+        width: 100%;
+        
+       }
+       
+       .times{
+        display:inline-table;
+        margin: 1px 8px 15px 5px;
+        padding: 0;
+       }     
 
        #noticiasbr{
          background-color:var(--co1);
          color:var(--co2);
+         margin: auto;
+         padding:0;
+         width:100%;
        }
 
        #noticiasmundo{
