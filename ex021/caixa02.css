@@ -13,10 +13,14 @@
             font-family:'basket';
             src: url(/ex021/fontes/Streetbomber.ttf);
             font-weight: normal;
-            }
+            
+            font-family: 'Lato', sans-serif;
  
             
          */
+
+         
+       @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');       
        
        
        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -38,9 +42,9 @@
 
         :root{
 
-          --co0: #DD6827;  
-          --co1: #28DED7;  
-          --co2: #FF8847; 
+          --co0: #06468D;  
+          --co1: #FECC00;  
+          --co2: #404040; 
           --co3: #0D0D0D;  
           --co4: #ffffff;  
 
@@ -50,21 +54,45 @@
 
         }
 
-        body{
-            background-color: #0D0D0D;
-        }
+       body{
+        
+        
+        font-family: 'Lato', sans-serif;
+        color:var(--co3);
 
-        header{
-            background-color: #DD6827;
-        }
+       }
 
-        div#resph1{
-           
-            text-align: center;
-            margin: auto;
+       header{
+        background-image: linear-gradient(to right, var(--co3), var(--co2) );       
+        color:var(--co4);
 
-        }
+       }
 
-        section{
-            background-color: #DD6827;
-        }
+       h1{
+        text-align: center;
+        font-weight: 800;
+        font-size: 32px;
+       }
+
+       nav a {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        font-weight: 400;
+        color: var(--co4);        
+        padding:0;
+        width:100%;
+
+       }      
+
+       #noticiasbr{
+         background-color:var(--co1);
+         color:var(--co2);
+       }
+
+       #noticiasmundo{
+        background-color:var(--co0);
+        color:var(--co4);
+      }
+
+      
