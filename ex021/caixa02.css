@@ -105,20 +105,13 @@
         background-image: linear-gradient(to bottom, var(--co4),var(--co1));
         text-align: center;        
         margin: 1px auto 25px auto;
-       
-       
-        
-
-
-       }
+             }
 
       div{
         background-image: linear-gradient(to bottom,var(--co2), var(--co3));
-        color:var(--co2);        
-      }
-        
+        color:var(--co2);
 
-       
+      }    
 
        #noticiasmundo{
         background-image: linear-gradient(to right, var(--co0), #4093ac );
