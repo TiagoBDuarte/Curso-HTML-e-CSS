@@ -1,37 +1,8 @@
-*{
-    padding: 0; /*Saber o que muda*/
-    margin: 0;/*Saber o que muda*/
-    box-sizing: border-box;/*Saber o que muda*/
-
-}
-
-#circle{
-    width: 200px;
-    height: 200px;
-    background-color: blueviolet;
-    margin: auto;
-    margin-top: 20px;
-    border-radius: 50%;
-}
-
-#square{
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    margin: auto;
-    margin-top: 40px;
-
-
-}
-
-#triangle{
-    width: 0;
-    height: 0;
-    border-left: 50px solid transparent;/*Estudar mais*/
-    border-right: 50px solid transparent;/*Estudar mais*/
-    border-bottom: 100px solid red;/*Estudar mais*/
-    margin: auto;
-    margin-top:30px;
-
-
+h1{
+    color: white;
+    background-color: black;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    
 }
