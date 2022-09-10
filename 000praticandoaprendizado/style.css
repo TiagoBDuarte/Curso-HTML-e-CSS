@@ -1,9 +1,8 @@
-h1{
-
-    width: 300px;
-    padding: 25px;
-    background-color: blue;
-    border: 3px solid black;
-    box-sizing: border-box;
+#teste{
+    min-height:30px;
+    height:200px;
+    max-width:100px;
+    border: 1px solid black;
+    
         
 }
