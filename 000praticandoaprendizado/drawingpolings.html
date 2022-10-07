@@ -1,58 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<style>
-    .div1{
-        padding:15px;
-        border: 3px solid green;
-        float:left;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <style>
+
+   *{   margin: 0;
+        padding: 0;
+       }
+
+    header{
+        background: #dad5d5;
+        border: 2px solid blue;
+        max-width: 99.65%;
+        height: 150px;
+        text-align: center;
+               
+
     }
 
-    .div2{
-        padding:15px;
-        padding:15px;
-        border: 3px solid red;
+    nav{
+        background: #9b9898;
+        border: 2px solid blue;
+        width: 10%;
+        height: 527.5px;
+        background: #9b9898;
+        border: 2px solid blue;
+        float: left;
         
     }
 
-    .div3{
-        padding:15px;
-        border: 3px solid green;
-        float:left;
-        
+    main{
+        background: #ffffff;
+        border: 2px solid #000000;
+        width: 70%;
+        height: 527.5px;
+        float: left;
+
     }
 
-    .div4{
-        padding:15px;
-        border: 3px solid red;
-        clear: left;
-        
-        
+    aside{
+        background: #8dd19e;
+        border: 2px solid #000000;
+        width: 19.15%;
+        height: 527.5px;
+        float: left;
     }
-   
 
-   
+    footer{
+        background: #ebb6b6;
+        border: 2px solid #000000;
+        width: 99.65%;
+        height: 40px;
+        clear: both;
+    }
 
-
-</style>
+    </style>
 </head>
 <body>
-    <h1>Float</h1>
-
-    <h2>Without Clear</h2>
-
-    <div class="div1">div1</div>
-    <div class="div2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptatem est voluptatibus. Dolor, deleniti, atque numquam aperiam dolorem laboriosam magni omnis et, reiciendis nemo maiores officia at earum illo similique!</div>
-
-    <h2>With Clear</h2>
-    <div class="div3">div3</div>
-    <div class="div4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae quidem quia saepe eius unde, quisquam adipisci blanditiis, omnis dolorem hic, ea reprehenderit nam fugit quae cupiditate aperiam molestiae laborum nisi.</div>
+    <div>
+        <header>Header</header>
+        <nav>Nav</nav>
+        <main>
+            <h1>Main</h1>
+            
+        </main>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+    </div>
     
-
-
-
-
-
-
 </body>
 </html>
