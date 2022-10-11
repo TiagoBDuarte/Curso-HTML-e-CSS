@@ -1,6 +1,73 @@
 @charset "UTF-8";
 
-body{
-    background-color: #eff7cf;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf); format('opentype');
+    font-weight: normal;
+
+}
+
+:root{
+    --cor0:#ffffff;
+    --cor1:#eff7cf;
+    --cor2:#3DD973;       
+    --cor3:#2b5030 ; 
+    --cor4:#000000 ; 
+
+    --fonte-padrão: Arial, Helvetica, sans-serif;
+    --fonte-titulos: 'Lato', sans-serif;
+
+    --font-titulo-principal:'Android';
+}
+
+
+body{
+    background-color:var(--cor1);
+    font-family: var(--fonte-titulos);
+}
+
+header{
+    background-color: var(--cor3);
+    color: var(--cor0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    text-align: center;
+}
+
+header p{
+    font-family: var(--fonte-padrão);
+    color: var(--cor0);    
+}
+
+nav {
+    height: 20px;
+    background-color: var(--cor3);
+    margin-top: -15px;
+    border: 2px solid var(--cor0);    
+}
+
+nav a{
+    color: var(--cor0);
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-right: 20px;
+    padding: 0px 10px 0px 10px;
+    border: 3px solid var(--cor0);    
+}
+
+h2{
+    font-family: 'Android';
+}
+
+main{
+    background-color: var(--cor0);
+}
+
+footer{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    width: 100%;
+    margin: 0px;
 }
