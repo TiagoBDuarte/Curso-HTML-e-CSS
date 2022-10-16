@@ -59,8 +59,7 @@ nav a{
     color: var(--cor0);
     text-decoration: none;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin:0px 60px 0px 50px;       
-    
+    margin:0px 60px 0px 50px;  
     border: 1px solid var(--cor0);    
 }
 
