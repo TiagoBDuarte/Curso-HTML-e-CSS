@@ -34,11 +34,14 @@ body{
 }
 
 header{
-    background-color: var(--cor3);
+    background-image: linear-gradient(to bottom, #153515,hsl(120, 65%, 45%));
     color: var(--cor0);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width:100%;
+    height:100px;
     text-align: center;
+    padding-top: 50px;
+    
 }
 
 header p{
@@ -47,21 +50,36 @@ header p{
 }
 
 nav {
-    min-width: 320px;
-    max-width: 800px;
-    background-color: var(--cor3);
-    border: 2px solid var(--cor0);
-    margin: auto; 
+    background-color: #28be28;  
+    padding: 20px;  
+    min-width: 320px;    
+    margin: auto;
+       
+}
+nav > a {
+    background-color: #153515;    
+    color: var(--cor0);
+    font-weight: bolder;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid var(--cor0);
+    
        
 }
 
-nav a{
-    color: var(--cor0);
+nav > a:hover {
+    background-color: #ffffff;    
+    color: var(--cor4);
+    font-weight: bolder;
+    padding: 10px;
     text-decoration: none;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin:0px 60px 0px 50px;  
-    border: 1px solid var(--cor0);    
+    border: 1px solid var(--cor0);
+    border-radius: 20%;
+    transition-duration: 0.5s;
+       
 }
+
+
 
 h2{
     font-family: 'Android';
@@ -69,11 +87,32 @@ h2{
 
 main{
     background-color: var(--cor0);
-    min-width: 320px;
+    min-width: 560px;
     max-width: 800px;
     margin: auto;
+    margin-bottom: 20px;
     padding: 20px;
     box-shadow: 7px 20px 20px 0px;
+}
+
+main h2{
+    background-image:linear-gradient(to right,var(--cor2), transparent);
+}
+
+
+main p{
+    text-indent: 30px;
+    margin: 10px 10px;
+    text-align: justify;
+    line-height: 1.5em;
+    
+    
+}
+
+main strong{
+    color: var(--cor3);
+    font-size: bolder;
+    background-color: var(--cor2);
 }
 
 .android{
@@ -81,9 +120,36 @@ main{
     margin: auto;
 }
 
+.pequena{
+    max-width: 350px;
+}
+
+aside{
+    
+    margin: 20px 10px 20px 10px;
+    border-radius: 5%;
+    border: 1px solid var(--cor3);
+    background-color: var(--cor2); 
+    box-shadow: 3px 7px 12px black;
+
+}
+
+aside h3{
+    
+    text-align: center;  
+
+}
+
+aside ul{
+
+    columns: 2;
+}
+
 footer{
     background-color: var(--cor4);
     color: var(--cor0);
+    text-align: center;
+    margin-top: 20px;
     width: 100%;
     margin: 0px;
 }
