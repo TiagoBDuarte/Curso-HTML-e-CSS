@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +30,7 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
+        CAPTION
         TABLE
           THEAD
                 TR,TD,TH
@@ -39,11 +40,13 @@
                 TR,TD,TH
 
     -->
+    
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -68,8 +71,8 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>90 8663 64</td>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num">90 8663 64</td>
 
             </tr>
         </tfoot>
