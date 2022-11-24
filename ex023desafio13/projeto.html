@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table{
+            border-collapse: collapse;
+            font-size: 1.5em;
+            border: 1px solid black;
+        }
+
+        thead,tr,th,td{
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+
+        .titulo{
+            background-color: gray;
+            color: white;
+            font-size: bolder;
+        }
+
+        thead,td {
+            padding:10px;
+        }
+
+        .materia{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Boletim Escolar</h1>
+    <table>
+        <caption> Displinas cursada em 2022</caption>
+        <thead class="titulo">
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2" >Disciplinas</th> 
+                <th colspan="2" >Notas</th>
+                <th rowspan="2" >Média</th>                 
+            </tr> 
+
+            <tr>
+                <th class="nota ">Nota 1</th>
+                <th class="nota ">Nota 2</th>
+            </tr> 
+
+         </thead>
+
+         <tbody>
+                <tr>
+                    <th rowspan="4" > Exatas</th>
+                    <td class="materia" >Matemática</td>
+                    <td >9.0</td>
+                    <td >9.0</td>
+                    <td >9.0</td>
+                 </tr>
+
+                 <tr>
+                    <td class="materia" >Física</td>
+                    <td >10.0</td>
+                    <td >10.0</td>
+                    <td >10.0</td>
+                 </tr>
+
+                 <tr>
+                    <td class="materia" >Química</td>
+                    <td >8.5</td>
+                    <td >7.5</td>
+                    <td >8.0</td>
+                 </tr>
+
+                 <tr>
+                    <td class="materia" >Biologia</td>
+                    <td >10.0</td>
+                    <td >10.0</td>
+                    <td >10.0</td>
+                 </tr>
+
+                 <tr class="titulo">
+                    <th class="materia" colspan="4"> Média Exatas</th>
+                    <td >9.25</td>
+                 </tr>
+
+                 <tr>
+                    <th rowspan="2" >Humanas</th>
+                    <td class="materia"  >História</td>
+                    <td >10.0</td>
+                    <td >10.0</td>
+                    <td >10.0</td>
+                 </tr>
+
+                 <tr>
+                    <td class="materia" >Geografia</td>
+                    <td >10.0</td>
+                    <td >10.0</td>
+                    <td >10.0</td>
+                 </tr>
+
+                 <tr class="titulo">
+                    <th class="materia" colspan="4" >Média Humanas</th>
+                    <td  >10.0</td>
+
+                 </tr>
+
+         </tbody>
+
+         
+
+
+    </table>
+    
+</body>
+</html>
