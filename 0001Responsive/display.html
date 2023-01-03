@@ -1,34 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
     <style>
-        h1,p{
+        h1,
+        p {
             border: 1px solid black;
         }
 
-        div{
+        div {
             background-color: red;
             border: 3px solid red;
         }
 
+        .inline {
+            display: inline;
+            border: 1px solid black;
+        }
+
+        .div1 {
+            background: blue;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .div2 {
+            background: yellow;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .div3 {
+
+            background: red;
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        .span1{
+            background: blue;   
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .span2{
+            background: yellow;   
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+
+        .span3{
+            background: red;   
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
     </style>
 </head>
+
 <body>
     <h1>Tag Display</h1>
     <p>As principais propriedades fundamentadas no <strong>display </strong>são "block" e "inline"</p>
 
-    <p>A maior parte das tags já são baseadas no display-block como configuração padrão, por exemplo as tgs:h1 ao h6,p,div,header,section,header,article,main e nav</p>
+    <p>A maior parte das tags já são baseadas no display-block como configuração padrão, por exemplo as tgs:h1 ao
+        h6,p,div,header,section,header,article,main e nav</p>
 
-    <p>A segunda mais conhecida por padrão e não menos importante  é o "display-inline".Exemplo mais comuns: strong, br, img, span.</p>
+    <p>A segunda mais conhecida por padrão e não menos importante é o "display-inline".Exemplo mais comuns: strong, br,
+        img, span.</p>
 
     <div></div>
 
-    <p>Observe todas as bordas baseadas no display block acima, todas fecham toda a horizontal da tela, como se fosse um bloco um em cima do outro, não foi preciso configurar, visto que já é um propriedade padrão</p>
+    <p>Observe todas as bordas baseadas no display block acima, todas fecham toda a horizontal da tela, como se fosse um
+        bloco um em cima do outro, não foi preciso configurar, visto que já é um propriedade padrão</p>
 
-        
+    <p class="inline">Display Inline</p>
+    <p>a tag acima apliquei o display inline veja como fica ela contorna o texto mas não fecha na horizontal e no
+        display inline não é possível alterar as dimensões</p>
+
+    <h1> Aplicando dimensões nas divs (block)</h1>
+
+    <div class="div1">div1</div>
+    <div class="div2">div2</div>
+    <div class="div3">div3</div>
+
+    <h1>Aplicando dimensões nas span (block)</h1>
+
+    <span class="span1">span 1</span>
+    <span class="span2">span 2</span>
+    <span class="span3">span3</span>
+    <p>Pode reparar nas imagens span acima que se alinharam uma ao lado da outra contornando as palavras</p>
+
+
+
 </body>
+
 </html>
