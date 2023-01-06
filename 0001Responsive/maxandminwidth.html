@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max and Min Width</title>
+    <style>
+        .ex1 {
+            border: 1px solid red;
+            min-width: 1000px;
+        }
+
+        .ex2 {
+            border: 1px solid blue;
+            max-width: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Max and Min Width</h1>
+    <p>Na div 1000px a borda só de adapta quando atinge 1000px para cima, quando a tela diminiu abaixo de 1000px continua ultrapassar</p>
+    <div class="ex1">
+        .ex1 { <br>
+            border: 1px solid red;<br>
+            min-width: 1000px;<br>
+        }
+    </div>
+    <br>
+    <p>Na div 700px a borda só de adapta quando atinge 700px para baixo, quando a tela diminiu abaixo de 700px não ultrapassa</p>
+    <div class="ex2">
+        .ex2 {<br>
+            border: 1px solid blue;<br>
+            max-width: 700px;<br>
+        }
+    </div>
+</body>
+
+</html>
