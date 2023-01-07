@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container {
+            display: inline-block;
+            background: blue;
+            width: 100%;
+            height: 400px;
+        }
+        /*position:static; > Posição padrão do CSS3 referente a propriedade padrão do CSS3*/
+
+        /*position:relative; > Posição padrão do CSS3 referente a propriedade padrão do CSS3*/
+
+        .div1 {
+            position: relative;
+            left: 20px;
+            display: inline-block;
+            background: yellow;
+            width: 30%;
+            height: 100px;
+        }
+
+        .div2 {
+            display: inline-block;
+            background: white;
+            width: 30%;
+            height: 100px;
+        }
+
+        .div3 {
+            display: inline-block;
+            background: red;
+            width: 30%;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">Primeira</div>
+        <div class="div2">Segunda</div>
+        <div class="div3">Teceira</div>
+    </div>
+
+    <p>O position relative foi aplicado no div amarelo, veja como ele se deslocou e ficou sobre a outra div.</p>
+</body>
+
+</html>
