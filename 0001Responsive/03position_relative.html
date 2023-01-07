@@ -24,16 +24,41 @@
             background: yellow;
             width: 30%;
             height: 100px;
+            z-index: 1;
         }
 
         .div2 {
+            position: relative;
+            display: inline-block;
+            background: white;
+            width: 30%;
+            height: 100px;
+            z-index: 2;
+        }
+
+        .div3 {
+            display: inline-block;
+            background: red;
+            width: 30%;
+            height: 100px;
+        }
+
+        .div4 {
+            display: inline-block;
+            background:yellow;
+            margin-left: 10px;
+            width: 30%;
+            height: 100px;
+        }
+
+        .div5 {
             display: inline-block;
             background: white;
             width: 30%;
             height: 100px;
         }
 
-        .div3 {
+        .div6 {
             display: inline-block;
             background: red;
             width: 30%;
@@ -47,9 +72,16 @@
         <div class="div1">Primeira</div>
         <div class="div2">Segunda</div>
         <div class="div3">Teceira</div>
+        
+        <div class="div4">quarta</div>
+        <div class="div5">quinta</div>
+        <div class="div6">sexta</div>
     </div>
 
-    <p>O position relative foi aplicado no div amarelo, veja como ele se deslocou e ficou sobre a outra div.</p>
+    <p>O position relative foi aplicado no div amarelo, veja como ele se deslocou e ficou sobre a segunda div.</p>
+
+    <p>Veja na quarta div foi aplicado o margin-left e deslocou todas as demais divs na mesma proporção</p>
+    <p>Temos uma propriedade complementar chamada z-index, na qual ela pode controlar a sobreposição do elemento</p>
 </body>
 
-</html>
+</html> 
