@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .container {
+            display: inline-block;
+            background: blue;
+            width: 100%;
+            height: 400px;
+            position:relative;
+
+        }
+      
+
+        .div1 {
+            position: relative;
+            left: 20px;
+            display: inline-block;
+            background: yellow;
+            width: 30%;
+            height: 100px;
+            z-index: 1;
+        }
+
+        .div2 {
+            position: relative;
+            display: inline-block;
+            background: white;
+            width: 30%;
+            height: 100px;
+            z-index: 2;
+        }
+
+        .div3 {
+            display: inline-block;
+            background: red;
+            width: 30%;
+            height: 100px;
+            position: absolute;
+            top: 150px;
+            right: 50%;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">Primeira</div>
+        <div class="div2">Segunda</div>
+        <div class="div3">Teceira</div>        
+        
+    </div>
+
+    <p>
+        Para se aplicar o absolute o elemento pai sempre deve ter como <strong>"position:relative"</strong> e o elemento filho sempre como relativo ao pai com a propriedade <strong>position:absolute</strong>. <br>
+        Div pai: container <br>
+        div filho: div1 div2 div 3
+    </p>
+</body>
+
+</html> 
