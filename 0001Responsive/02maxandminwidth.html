@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Max and Min Width</title>
     <style>
-        .ex1 {
-            border: 1px solid red;
-            min-width: 1000px;
+        .largura1{
+
+            max-width:1300px;
+            border: 1px solid black;
+
         }
 
-        .ex2 {
-            border: 1px solid blue;
-            max-width: 700px;
+        .largura2{
+            min-width:700px;
+            border: 1px solid black;
+            
         }
+
+        .explica {
+            margin-top: 2px;
+            font-size: smaller;
+
+        }
+
     </style>
 </head>
-
 <body>
-    <h1>Max and Min Width</h1>
-    <p>Na div 1000px a borda só de adapta quando atinge 1000px para cima, quando a tela diminiu abaixo de 1000px continua ultrapassar</p>
-    <div class="ex1">
-        .ex1 { <br>
-            border: 1px solid red;<br>
-            min-width: 1000px;<br>
-        }
-    </div>
-    <br>
-    <p>Na div 700px a borda só de adapta quando atinge 700px para baixo, quando a tela diminiu abaixo de 700px não ultrapassa</p>
-    <div class="ex2">
-        .ex2 {<br>
-            border: 1px solid blue;<br>
-            max-width: 700px;<br>
-        }
-    </div>
-</body>
+    <h1>Width</h1>
+    <p>Tag utilizada para definir a largura do elemento na tela e pode ter dinifições de limite tanto para largura máxima <strong>"max-width"</strong> quando para largura mínima <strong>"min-width"</strong></p>
+    <h2>Max Width</h2>
+    <p>Nessa propriedade é possível definir a largura máxima, caso sua tela fique abaixo da dimensão máxima a tag irá se adapatar, porém se a tela ultrapassar a tag respeitar o limite.</p>
+    <div class="largura1">1300px <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam voluptas, voluptatem exercitationem saepe rerum accusantium, odio vero voluptates nam vel ducimus optio laudantium commodi repellat dolorum? Quibusdam, incidunt quasi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dolore laboriosam pariatur cumque mollitia soluta repudiandae quo officia hic exercitationem suscipit, error eveniet nesciunt atque voluptate cupiditate adipisci minus velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quidem laboriosam rerum odit? Veniam sunt consectetur numquam tempora mollitia earum nisi ipsam repellat eius impedit atque asperiores, quasi quo quae! </div>
+    <p class="explica">Se estiver no monitor verá que se alterar a tela a tag de 1300px irá se adaptar até que a tela ultrapasse, se ultrapassar permanecerá no seu tamanho difinido. Porém o texto sempre ficará responsivo dentro da tag </p>
+    <h2>Min-Width</h2>
+    <div class="largura2">700px <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus laboriosam voluptas, voluptatem exercitationem saepe rerum accusantium, odio vero voluptates nam vel ducimus optio laudantium commodi repellat dolorum? Quibusdam, incidunt quasi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dolore laboriosam pariatur cumque mollitia soluta repudiandae quo officia hic exercitationem suscipit, error eveniet nesciunt atque voluptate cupiditate adipisci minus velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quidem laboriosam rerum odit? Veniam sunt consectetur numquam tempora mollitia earum nisi ipsam repellat eius impedit atque asperiores, quasi quo quae! </div>
+    <p class="explica">O min-width não tem limite máximo apenas o mínimo, ou seja enquanto expandir a janela sempre irá se adaptar e caso diminua abaixo do minimo irá cortar o texto do elemento não ficando responsivo.O texto só fica responsivo após passar o mínimo</p>
 
+    
+</body>
 </html>
