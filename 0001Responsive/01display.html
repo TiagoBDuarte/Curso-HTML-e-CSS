@@ -1,56 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
     <style>
-        .explica{
+        .explica {
             margin-top: 2px;
             font-size: smaller;
 
         }
-        .exblock1{
+
+        .exblock1 {
             border: 1px solid red;
         }
 
-        .exblock2{
+        .exblock2 {
             border: 1px solid blue;
         }
 
-        .exblock3{
+        .exblock3 {
             border: 1px solid green;
         }
 
-        .exblock4{
+        .exblock4 {
             border: 1px solid black;
             width: 33%;
             height: 80px;
         }
 
-        .exblock5{
+        .exblock5 {
             border: 1px solid purple;
             width: 33%;
             height: 80px;
         }
 
+
+        .exinline1 {
+            border: 1px solid blue;
+            width: 33%;
+            height: 80px;
+
+        }
+
+        .exinline2 {
+            border: 1px solid red;
+            width: 33%;
+            height: 80px;
+
+        }
+
+        .exinline3 {
+            border: 1px solid purple;
+            width: 33%;
+            height: 80px;
+
+        }
     </style>
 </head>
+
 <body>
     <h1>Display</h1>
-    <p>A tag display possui algumas propriedades, porém a mais importantes são <strong>block</strong> e <strong>inline</strong></p>
+    <p>A tag display possui algumas propriedades, porém a mais importantes são <strong>block</strong> e
+        <strong>inline</strong></p>
     <h2>Block</h2>
-    <p> O display block vem com uma configuração padrão para as principais tags mais usadas como:h1 ao h6,p,div,header,section,header,article,main e nav. Vejamos um exemplo de "display:block" logo abaixo</p>
+    <p> O display block vem com uma configuração padrão para as principais tags mais usadas como:h1 ao
+        h6,p,div,header,section,header,article,main e nav. Vejamos um exemplo de "display:block" logo abaixo</p>
     <div class="exblock1">div1</div>
-    <p class="explica">Veja como a borda fecha toda area orizontal da linha da div1, essa é uma característica do "display:block" por padrão onde não é necessário consigurar no CSS</p>
+    <p class="explica">Veja como a borda fecha toda area orizontal da linha da div1, essa é uma característica do
+        "display:block" por padrão onde não é necessário consigurar no CSS</p>
     <p>Se aplicarmos outras divs logo abaixos uma ficará em cima da outra</p>
     <div class="exblock2">div2</div>
     <div class="exblock3">div3</div>
 
-    <p>Vamos aplicar na Div4 um exemplo que na propriedade block é possível definir altura e largura, ou width ou height.</p>
+    <p>Vamos aplicar na Div4 um exemplo que na propriedade block é possível definir altura e largura, ou width ou
+        height.</p>
     <div class="exblock4">div4</div>
     <div class="exblock5">div5</div>
+    <p class="explica">Veja como as div ficaram em cima da outra com suas dimensões definidas pelo desenvolvedor</p>
+    <h2>Inline</h2>
+    <p>A propriedade "inline" não é muito usada com frequência mas muito importante na organização dos elementos que
+        precisam ser organizados na mesma linha, exemplos de elementos que já vem com a propriedade "display:inline"
+        são:<strong>strong, br,img, span. Logo abaixo veremos exemplos do comportamento da propriedade "inline"</strong>
+    </p>
+    <span class="exinline1">span1</span>
+    <span class="exinline2">span2</span>
+    <span class="exinline3">span3</span>
+    <p class="explica">Veja como a tag span se organiza uma ao lado da outra, na mesma linha "Inline"</p>
+
+    <p>Se organizarmos no html a tag uma do lado da outra as bordas no navegador irão encostas</p>
+    <span class="exinline1">span1</span><span class="exinline2">span2</span><span class="exinline3">span3</span>
     
+
 </body>
+
 </html>
