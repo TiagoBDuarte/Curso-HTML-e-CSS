@@ -56,6 +56,23 @@
             border: 1px solid purple;
             width: 33%;
             height: 80px;
+        }
+
+        .di1{
+            display: inline-block;
+            border: 1px solid black;
+            background: blue;
+            width: 33%;
+            height: 80px;
+
+        }
+
+        .di2{
+            display: inline-block;
+            border: 1px solid black;
+            background: red;
+            width: 33%;
+            height: 80px;
 
         }
     </style>
@@ -64,7 +81,8 @@
 <body>
     <h1>Display</h1>
     <p>A tag display possui algumas propriedades, porém a mais importantes são <strong>block</strong> e
-        <strong>inline</strong></p>
+        <strong>inline</strong>
+    </p>
     <h2>Block</h2>
     <p> O display block vem com uma configuração padrão para as principais tags mais usadas como:h1 ao
         h6,p,div,header,section,header,article,main e nav. Vejamos um exemplo de "display:block" logo abaixo</p>
@@ -83,7 +101,7 @@
     <h2>Inline</h2>
     <p>A propriedade "inline" não é muito usada com frequência mas muito importante na organização dos elementos que
         precisam ser organizados na mesma linha, exemplos de elementos que já vem com a propriedade "display:inline"
-        são:<strong>strong, br,img, span. Logo abaixo veremos exemplos do comportamento da propriedade "inline"</strong>
+        são:<strong>strong, br,img, span. Logo abaixo veremos exemplos do comportamento da propriedade "inline". Tags com essa propriedade aplicada não é possível definir as dimensões com width e height</strong>
     </p>
     <span class="exinline1">span1</span>
     <span class="exinline2">span2</span>
@@ -92,7 +110,13 @@
 
     <p>Se organizarmos no html a tag uma do lado da outra as bordas no navegador irão encostas</p>
     <span class="exinline1">span1</span><span class="exinline2">span2</span><span class="exinline3">span3</span>
-    
+
+    <h1>Display:inline block</h1>
+    <p>É possível utilizas as duas propriedades numa mesma tag, como exemplo iremos utilizar duas tags com padrões diferentes de display, como que já vem com o padrão block e outra com o padrão inline: div e span. E vamos aplicar dimensões iguais</p>
+    <div class="di1">Div</div>
+    <span class="di2">Span</span>
+    <p class="explica">Veja como adquiriram a mesma propriedade nas dimensões mesmo sendo tags diferentes</p>
+
 
 </body>
 
