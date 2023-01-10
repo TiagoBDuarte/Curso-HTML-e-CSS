@@ -7,81 +7,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Position</title>
     <style>
-        .container {
-            display: inline-block;
-            background: blue;
-            width: 100%;
-            height: 400px;
-        }
-        /*position:static; > Posição padrão do CSS3 referente a propriedade padrão do CSS3*/
 
-        /*position:relative; > Posição padrão do CSS3 referente a propriedade padrão do CSS3*/
+        .explica {
+            margin-top: 2px;
+            font-size: smaller;
+
+        }
+        .container {
+
+            display: inline-block;
+            border: 1px solid black;
+            background: #babae4;
+            width: 100%;
+            height: 600px;
+            
+        }
+        
 
         .div1 {
             position: relative;
-            left: 20px;
+            left: 10px;
             display: inline-block;
-            background: yellow;
-            width: 30%;
+            border: 1px solid black;
+            background: blue;
+            width:30%;
             height: 100px;
-            z-index: 1;
+            z-index: 0;
+           
         }
 
         .div2 {
             position: relative;
             display: inline-block;
-            background: white;
-            width: 30%;
+            border: 1px solid black;
+            background: yellow;
+            width:30%;
             height: 100px;
-            z-index: 2;
+            z-index: 1;
+            
         }
 
         .div3 {
+            position: relative;
+            bottom: 250px;
             display: inline-block;
+            border: 1px solid black;
             background: red;
-            width: 30%;
+            width:30%;
             height: 100px;
+            
         }
 
         .div4 {
             display: inline-block;
-            background:yellow;
-            margin-left: 10px;
-            width: 30%;
+            border: 1px solid black;
+            background: blue;
+            width:30%;
             height: 100px;
+            
         }
 
         .div5 {
             display: inline-block;
-            background: white;
-            width: 30%;
+            border: 1px solid black;
+            background: yellow;
+            width:30%;
             height: 100px;
         }
 
         .div6 {
             display: inline-block;
+            border: 1px solid black;
             background: red;
-            width: 30%;
+            width:30%;
             height: 100px;
+           
         }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <h1>Position Relative</h1>
+        <p>As três primeiras div vamos usar a <strong>position relative</strong> para organizar a localidade dentro do elemento pai que seria a div container e a da quarta aditante o margin-left para organizar também e entendermos a diferença entre ambos.</p>
+        <h2>relative</h2>
         <div class="div1">Primeira</div>
         <div class="div2">Segunda</div>
         <div class="div3">Teceira</div>
-        
+        <p class="explica">Veja que a terceira div ela passa a linha do elemento pai, pois ela está relativa a toda tela e não ao pai, foi aplicado o bottom de 250px</p>
+        <p class="explica">Na primeira div aplicamos um position relative para que passe a borda da segunda div e um z-index para que esteja abaixo da camada da segunda div também e para aplicar essa propriedade e interação entre os elementos os mesmo precisam estar com o position relative.</p>
+
+        <h2>margin-left</h2>        
         <div class="div4">quarta</div>
         <div class="div5">quinta</div>
         <div class="div6">sexta</div>
     </div>
 
-    <p>O position relative foi aplicado no div amarelo, veja como ele se deslocou e ficou sobre a segunda div.</p>
-
-    <p>Veja na quarta div foi aplicado o margin-left e deslocou todas as demais divs na mesma proporção</p>
-    <p>Temos uma propriedade complementar chamada z-index, na qual ela pode controlar a sobreposição do elemento</p>
+    
 </body>
 
 </html> 
