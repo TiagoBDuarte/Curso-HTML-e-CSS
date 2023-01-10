@@ -1,149 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display</title>
     <style>
-        h1,
-        p {
+        .explica{
+            margin-top: 2px;
+            font-size: smaller;
+
+        }
+        .exblock1{
+            border: 1px solid red;
+        }
+
+        .exblock2{
+            border: 1px solid blue;
+        }
+
+        .exblock3{
+            border: 1px solid green;
+        }
+
+        .exblock4{
             border: 1px solid black;
+            width: 33%;
+            height: 80px;
         }
 
-        div {
-            background-color: red;
-            border: 3px solid red;
+        .exblock5{
+            border: 1px solid purple;
+            width: 33%;
+            height: 80px;
         }
 
-        .inline {
-            display: inline;
-            border: 1px solid black;
-        }
-
-        .div1 {
-            background: blue;
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-
-        }
-
-        .div2 {
-            background: yellow;
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-
-        }
-
-        .div3 {
-
-            background: red;
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-
-        }
-
-        .span1{
-            background: blue;   
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-        }
-
-        .span2{
-            background: yellow;   
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-        }
-
-        .span3{
-            background: red;   
-            border: 1px solid black;
-            width: 100px;
-            height: 100px;
-        }
-
-        .none{
-            display: none;
-        }
-
-        .div4{
-            display: inline-block;
-            height: 150px;
-            width: 15%;
-            background: blue;   
-            border: 1px solid black;
-        }
-
-        .div5{
-            display: inline-block;
-            height: 150px;
-            width: 15%;
-            background: red;   
-            border: 1px solid black;
-        }
-
-        .div6{
-            display: inline-block;
-            height: 150px;
-            width: 15%;
-            background: yellow;   
-            border: 1px solid black;
-        }
     </style>
 </head>
-
 <body>
-    <h1>Tag Display</h1>
-    <p>As principais propriedades fundamentadas no <strong>display </strong>são "block" e "inline"</p>
+    <h1>Display</h1>
+    <p>A tag display possui algumas propriedades, porém a mais importantes são <strong>block</strong> e <strong>inline</strong></p>
+    <h2>Block</h2>
+    <p> O display block vem com uma configuração padrão para as principais tags mais usadas como:h1 ao h6,p,div,header,section,header,article,main e nav. Vejamos um exemplo de "display:block" logo abaixo</p>
+    <div class="exblock1">div1</div>
+    <p class="explica">Veja como a borda fecha toda area orizontal da linha da div1, essa é uma característica do "display:block" por padrão onde não é necessário consigurar no CSS</p>
+    <p>Se aplicarmos outras divs logo abaixos uma ficará em cima da outra</p>
+    <div class="exblock2">div2</div>
+    <div class="exblock3">div3</div>
 
-    <p>A maior parte das tags já são baseadas no display-block como configuração padrão, por exemplo as tgs:h1 ao
-        h6,p,div,header,section,header,article,main e nav</p>
-
-    <p>A segunda mais conhecida por padrão e não menos importante é o "display-inline".Exemplo mais comuns: strong, br,
-        img, span.</p>
-
-    <div></div>
-
-    <p>Observe todas as bordas baseadas no display block acima, todas fecham toda a horizontal da tela, como se fosse um
-        bloco um em cima do outro, não foi preciso configurar, visto que já é um propriedade padrão</p>
-
-    <p class="inline">Display Inline</p>
-    <p>a tag acima apliquei o display inline veja como fica ela contorna o texto mas não fecha na horizontal e no
-        display inline não é possível alterar as dimensões</p>
-
-    <h1> Aplicando dimensões nas divs (block)</h1>
-
-    <div class="div1">div1</div>
-    <div class="div2">div2</div>
-    <div class="div3">div3</div>
-
-    <h1>Aplicando dimensões nas span (block)</h1>
-
-    <span class="span1">span 1</span>
-    <span class="span2">span 2</span>
-    <span class="span3">span3</span>
-    <span class="span1">span 1</span><span class="span2">span 2</span><span class="span3">span3</span>
+    <p>Vamos aplicar na Div4 um exemplo que na propriedade block é possível definir altura e largura, ou width ou height.</p>
+    <div class="exblock4">div4</div>
+    <div class="exblock5">div5</div>
     
-    <p>Pode reparar nas imagens span acima que se alinharam uma ao lado da outra contornando as palavras e na mesma repetição um ficad encostado no outro pois no código um foi colodado do lado do outro como palavras</p>
-
-    <h1>Display none</h1>
-    <p>Logo abaixo existe uma paragráfo aplicado display none onde não é possível vê-lo mas se consultar no html e css ele esá configurado</p>
-    <div class="none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam, cum nesciunt labore deleniti quae possimus ex officia perferendis, culpa corporis sapiente voluptatum distinctio, cupiditate ipsam sunt fuga natus amet.</div>
-
-    <h1>Display inline block</h1>
-    <p>Logo abaixo veremos as divs poderão ficar uma do lado da outra, tanto podendo ficar do lado da outra como no inline quanto suas dimensões poderão ser alteradas conforme o block para isso aplicamos a propriedade "inline-block"</p>
-    <div class="div4"></div>
-    <div class="div5"></div>
-    <div class="div6"></div>
-
-
-
 </body>
-
 </html>
