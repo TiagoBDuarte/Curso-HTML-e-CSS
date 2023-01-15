@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow</title>
     <style>
+    
         main {
             border: 1px solid black;
             height: 1000px;
@@ -42,6 +43,16 @@
             /*scroll:Cria uma barra de rolagem para que possamos ver todo o conteudo*/
             margin-bottom: 100px;
         }
+
+        .auto {
+            background: rgb(179, 179, 179);
+            border: 1px solid black;
+            color: black;
+            height: 100px;
+            overflow: auto;
+            /*scroll:Além de se adapatar ao tamanho do texto ele cria uma barra se necessário*/
+            margin-bottom: 100px;
+        }
     </style>
 </head>
 
@@ -68,13 +79,23 @@
         </div>
 
         <div class="scroll">
-            <h2>Hidden</h2>
+            <h2>Scroll</h2>
             <p>Aqui podemos ver todo o conteudo através da barra de rolagem que apareceu através da propriedade scroll. Voluptas
                 alias, laboriosam, suscipit facere officiis sit non, aspernatur molestias ducimus numquam ipsam repellat
                 consectetur quod ex nihil possimus perferendis! Deserunt, illo. Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Quia voluptatibus molestias fugiat ipsum. Eius, alias fugit obcaecati illum corporis
                 in architecto est labore aspernatur eligendi, cupiditate at nobis, rerum incidunt? </p>
         </div>
+
+        <div class="auto">
+            <h2>Auto</h2>
+            <p>Além de se adapatar ao tamanho do texto ele cria uma barra se necessário. Voluptas
+                alias, laboriosam, suscipit facere officiis sit non, aspernatur molestias ducimus numquam ipsam repellat
+                consectetur quod ex nihil possimus perferendis! Deserunt, illo. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia voluptatibus molestias fugiat ipsum. Eius, alias fugit obcaecati illum corporis
+                in architecto est labore aspernatur eligendi, cupiditate at nobis, rerum incidunt? </p>
+        </div>
+
 
 
     </main>
