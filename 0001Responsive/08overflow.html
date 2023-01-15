@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        main {
+            border: 1px solid black;
+            height: 1000px;
+        }
+
+
+        .visible {
+            background: rgb(179, 179, 179);
+            border: 1px solid black;
+            color: black;
+            height: 100px;
+            overflow: visible;
+            /*Padrão:Mostra o conteudo mesmo que fica pra fora*/
+            margin-bottom: 100px;
+        }
+
+        .hidden {
+            background: rgb(179, 179, 179);
+            border: 1px solid black;
+            color: black;
+            height: 100px;
+            overflow: hidden;
+            /*Hidden:Mostra só o que está dentro do conteúdo*/
+            margin-bottom: 100px;
+        }
+
+        .scroll {
+            background: rgb(179, 179, 179);
+            border: 1px solid black;
+            color: black;
+            height: 100px;
+            overflow: scroll;
+            /*scroll:Cria uma barra de rolagem para que possamos ver todo o conteudo*/
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Overflow</h1>
+        <div class="visible">
+            <h2>Visible</h2>
+            <p>Veja que nesta Tag a continuação do texto ultrapassou a borda, aplicamos um height de 100px, aqui já está
+                aplicada a propriedade por padrão <strong>visible</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi, molestias inventore cumque rerum
+                illo, tempora ipsum voluptatem cum laborum, architecto alias voluptas molestiae est. Voluptates
+                doloribus delectus adipisci distinctio.</p>
+        </div>
+
+        <div class="hidden">
+            <h2>Hidden</h2>
+            <p>Nesta TAg mostra apenas o conteudo que ficou dentro do elemento com a altura ou largura definida.Veja que
+                ainda tem um Lorem que não aparecerá. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+                alias, laboriosam, suscipit facere officiis sit non, aspernatur molestias ducimus numquam ipsam repellat
+                consectetur quod ex nihil possimus perferendis! Deserunt, illo. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia voluptatibus molestias fugiat ipsum. Eius, alias fugit obcaecati illum corporis
+                in architecto est labore aspernatur eligendi, cupiditate at nobis, rerum incidunt? </p>
+        </div>
+
+        <div class="scroll">
+            <h2>Hidden</h2>
+            <p>Aqui podemos ver todo o conteudo através da barra de rolagem que apareceu através da propriedade scroll. Voluptas
+                alias, laboriosam, suscipit facere officiis sit non, aspernatur molestias ducimus numquam ipsam repellat
+                consectetur quod ex nihil possimus perferendis! Deserunt, illo. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Quia voluptatibus molestias fugiat ipsum. Eius, alias fugit obcaecati illum corporis
+                in architecto est labore aspernatur eligendi, cupiditate at nobis, rerum incidunt? </p>
+        </div>
+
+
+    </main>
+
+
+</body>
+
+</html>
