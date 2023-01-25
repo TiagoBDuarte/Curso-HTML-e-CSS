@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        /*Seletor Universal*/
+        *{
+            color: black;
+            text-align: left;
+        }
+        /*
+        Seletores combinadores:
+        1. Irmão adjacente
+        2. Irmão geral
+        3. Filho
+        4. Descendente
+        */
+
+        /*Seletor de Descendente*/
+        div p {
+            background: green;
+            color: white;
+        }
+
+        /*Seletor de Filhos (>)*/
+        div > p {
+            background: blue;
+            color:yellow;
+
+        }
+
+        /*Seletor de Irmão Adjacente*/
+        div + h2 {
+            text-align: center;
+            color: purple;
+        }
+
+        /*Seletor de Irmão Geral*/
+        div ~ p{
+            text-align: center;
+            color: orangered;
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Combinadores CSS</h2>
+    </header>
+    <p>Aula de Desenvolvimento Web</p>
+    <div id="a">
+        <pre>
+            <p>Paragrafo descendente</p>
+        </pre>
+        <p>Parágrafo filho</p>
+    </div>
+    <h2>Segunda parte do Arquivo HTML</h2>
+    <p>Parágrafo da segunda parte</p>
+    <h2>Terceira parte do Arquivo HTML</h2>
+    <p>Parágrado da terceira parte</p>
+
+    
+</body>
+</html>
