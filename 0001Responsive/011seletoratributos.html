@@ -4,71 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Seletores de Atributos</title>
+    <title>Seletores de atributos</title>
     <style>
-        /*Seletor Universal*/
-        * {
-            text-align: left;
-            color: #000000;
+        *{
+            margin-left: 10px;
+            padding-left:10px;
+            padding-right: 10px;            
         }
 
-        /*Elementos <a> com href igual a http://www.bosontreinamentos.com.br/*/
-            a[href="http://www.bosontreinamentos.com.br/"]  {
-                font-size: 25px;
-                color: red;
-            }  
-        
-            /*Elementos <div> com ID que contenha a palavra "Parte" */
-            
-            div[id*="parte"] {                
-                color: crimson;
-                font-size: 50px;
-            }
+        .tit1{
+            font-size: 20px;
+            text-align: center;
+        }
 
-            /*Elementos <a> com href terminado em .br*/
-            a[href$=".br/"] {
-                font-style: bold;
-                color: blue;
-            }
+        a[href="http://www.youtube.com"]{
+            color: red;
+        }
 
-            /*Elementos <a> com href terminado em .br*/
-                a[href$=".br/"] {
-                font-style: bold;
-                color: blue;               
+        div[id*="exemplo"] {
+            color:green;
+        }
 
-            }
 
-            /*Elementos <a> com href iniciando com https*/
-                a[href^="https"] {
+       
 
-                    color: blueviolet;
-                    font-size: large;
-                
-            }
-
-                 /*Elementos que percençam à clase cl1, entre outras*/
-                *[class~="cl1"]{
-                    color: red;
-                    background-color: yellowgreen;
-
-                }
-                
-         
     </style>
 </head>
 <body>
-    <h2>Estilos CSS</h2>
-    <p>Seletor de Atributos</p>
-    <h2 class="cl1 cl2 cl3" > Segunda seção do Arquivo</h2>
-    <p id="id1">Parágrafo com ID</p>
-    <a href="http://www.bosontreinamentos.com.br/" class="cl1 cl2" > Bóson Treinamentos</a>
-    <a href="https://diariodonaturalista.com.br/" class="cl2" > Diário</a>
-    <a href="https://wwww.ibm.com">IBM</a>
-    <p class="parte1 cl1" > Parágrafo com Classe</p>
-    <div id="parte1"> Div 01</div>
-    <div id="parte2"> Div 02</div>
-    <div id="secao3"> Div 03</div>
-    <div id="parte4"> Div 04</div>
+    <h1 class="tit1" > Título 1 Seletores de atributos</h1>
+
+    <h2 class="tit2" > Título 2</h2>
+     <div>
+        <h2 class="subt">Subtitulo 1</h2>
+        <a href="http://www.youtube.com">Youtube</a>
+    </div>
+
+    <h1 class="tit" > </h1>
+        <div id="exemplo">Aqui aplicamos o <strong>"*="</strong> para definirmos o estilo usando apenas parte da classe. </div>
+
+    <h1 class="tit" > </h1>
+
+    <h1 class="tit" > </h1>
+
+    <h1 class="tit" > </h1>
+
+    <h1 class="tit" > </h1>
+
     
 </body>
 </html>
