@@ -7,44 +7,49 @@
     <title>Seletores</title>
     <style>
         /*Seletor universal*/
-        *{
-            color: brown;
-
-        }
-
-        /*Seletor de Elemento*/
-        p, h2 {
+        * {
             text-align: center;
-            color: green;
             font-size: 20px;
+            margin: 15px 15px 15px 15px ;
+            color: green;
         }
 
-        /*Seletor de ID*/
-        #id1 {
+        h2, h3{
+
             text-align: left;
-            color: blue;
-            font-size: 30px;
-        }
-
-        /*Seletor por Classe*/
-        h2.cl1 {
-            text-align: right;
             font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
             color: red;
+        }
+
+        #identidade{
+            font-family: 'Courier New', Courier, monospace;
+            color: blue;
 
         }
+
+        .clas1{
+            text-align: left;
+            margin-left: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            color: blueviolet;
+            font-size: 14px;
+        }
+
 
     </style>
 </head>
 <body>
+    <h1>Seletores</h1>
+    <p>O título acima e este parágrafo estão sobre propriedades do <strong>seletor universal</strong> que se aplica com<strong> " * "</strong>apenas, contudo todos os demais estão até que seja aplicada uma alteração por ultimo.</p>
 
-    <h2>Arquivo HTML </h2>
-    <p>Aula de desenvolvimento Web</p>
-    <p>Outro parágrafo</p>
-    <p id="id1">Parágrafo com ID</p>
-    <p class="cl1">Parágrafo com Classe</p>
-    <h2 class="cl1">Segunda seção do Arquivo HTML</h2>
+    <h1> Outros elementos com classes <strong>"class"</strong></h1>
+    <h2  >Exemplo da aplicação de seletores de elementos</h2>
+    <h3>Aqui usarmos a virgula <strong>","</strong> para informar quais elementos serão aplicados os estilos</h3>
 
+    <p id="identidade">Aqui neste parágrafo aplicamos o seletor por ID usando jogo da velha <strong>"#"</strong> </p>
+
+    <p class="clas1">Aqui temos um seletor por classe onde se usa o ponto <strong>"."</strong></p>
     
 </body>
 </html>
