@@ -8,60 +8,48 @@
     <style>
         /*Seletor Universal*/
         *{
-            color: black;
-            text-align: left;
+            margin-left: 0px;
+
         }
         /*
-        Seletores combinadores:
-        1. Irmão adjacente
-        2. Irmão geral
-        3. Filho
-        4. Descendente
+        Seletores combinadores:   
+        
+        1. Descendente
+        2. Filho
+           . Irmão adjacente
+       . Irmão geral
         */
 
         /*Seletor de Descendente*/
-        div p {
-            background: green;
-            color: white;
+        div > p{
+            color: red;
         }
 
-        /*Seletor de Filhos (>)*/
-        div > p {
-            background: blue;
-            color:yellow;
+      
+      
+    
 
-        }
 
-        /*Seletor de Irmão Adjacente*/
-        div + h2 {
-            text-align: center;
-            color: purple;
-        }
-
-        /*Seletor de Irmão Geral*/
-        div ~ p{
-            text-align: center;
-            color: orangered;
-            font-size: 45px;
-        }
+     
+  
     </style>
 </head>
 <body>
-    <header>
-        <h2>Combinadores CSS</h2>
-    </header>
-    <p>Aula de Desenvolvimento Web</p>
-    <div id="a">
-        <pre>
-            <p>Paragrafo descendente</p>
-        </pre>
-        <p>Parágrafo filho</p>
-    </div>
-    <h2>Segunda parte do Arquivo HTML</h2>
-    <p>Parágrafo da segunda parte</p>
-    <h2>Terceira parte do Arquivo HTML</h2>
-    <p>Parágrado da terceira parte</p>
+     <div>
+        <!--Aqui temos <p> um descendente direto-->
+        <p>O seletor de filho ">"  selecionaria apenas o elemento "child" diretamente abaixo do elemento pai.         
+        </p>
+        
+        <section><p>Não aplicou este pois está numa section</p></section>
 
-    
+     </div>
+
+     <div>
+         <!--Aqui temos <p> como um descendente não direto apenas neto direto-->
+        <section>
+            <p> O seletor descendente (parent "Espaço"  child )seleciona todos os elementos "child" abaixo do elemento "parent", incluindo elementos "child" dentro de outros elementos "child".                
+            </p>            
+        </section>
+     </div>
 </body>
 </html>
