@@ -16,13 +16,26 @@
             font-size: 20px;
             text-align: center;
         }
-
+        
+         /*Toda classe igual ao conteudo se usa "=" */
         a[href="http://www.youtube.com"]{
             color: red;
         }
 
+        /*Parte da Classe se usa "*="  */
         div[id*="exemplo"] {
             color:green;
+        }
+
+        /*Final como critério de seleção se usa o "$="  */
+        h1[class$="01"] {
+            color: blue;
+        }
+        /*Para uma seleção de classes gerais se usa o "~="  */
+
+        *[class~="class1"] {
+            color: brown;
+
         }
 
 
@@ -40,15 +53,15 @@
     </div>
 
     <h1 class="tit" > </h1>
-        <div id="exemplo">Aqui aplicamos o <strong>"*="</strong> para definirmos o estilo usando apenas parte da classe. </div>
+        <div id="exemplo">Usando só uma parte </div>
 
-    <h1 class="tit" > </h1>
+    <h1 class="class1 tit01" > Critério Final</h1>
 
-    <h1 class="tit" > </h1>
+    <h1 class="class1 tit02" > Geral </h1>
 
-    <h1 class="tit" > </h1>
+    <h1 class="class1 tit03" > Geral</h1>
 
-    <h1 class="tit" > </h1>
+    <h1 class="class1 tit04" > Geral  </h1>
 
     
 </body>
